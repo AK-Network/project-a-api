@@ -8,5 +8,9 @@ export const config = {
 export default async function handler(req: Request, ctx: RequestContext) {
   const users = await getAllUsers()
 
-  return Response.json({ name: 'Project A API', version: 1, resource: 'User', data: users })
+  return new Response(JSON.stringify({ name: 'Project A API', version: 1, resource: 'User', data: users }), {
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
 }
