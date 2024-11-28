@@ -1,7 +1,12 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+import type { RequestContext } from '@vercel/edge';
 import { getAllUsers } from '../../../src/lib/db';
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export const config = {
+  runtime: 'edge'
+}
+
+export default async function handler(req: Request, ctx: RequestContext) {
   const users = await getAllUsers()
-  res.json({ name: 'Project A API', version: 1, resource: 'User', data: users })
+
+  return Response.json({ name: 'Project A API', version: 1, resource: 'User', data: users })
 }

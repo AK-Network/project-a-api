@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@vercel/edge':
+        specifier: ^1.1.2
+        version: 1.1.2
       '@vercel/node':
         specifier: ^3.2.27
         version: 3.2.27
@@ -107,6 +110,9 @@ packages:
 
   '@vercel/build-utils@8.6.0':
     resolution: {integrity: sha512-shST7/8zY0Oi2uxgwt9S/fjat96Ohpt0bXB+4/TeekdDmIIIL8t+mg9ASEg1WGF8JjWqWx+tYQfXlvv7d/D+dg==}
+
+  '@vercel/edge@1.1.2':
+    resolution: {integrity: sha512-wt5SnhsMahWX8U9ZZhFUQoiXhMn/CUxA5xeMdZX1cwyOL1ZbDR3rNI8HRT9RSU73nDxeF6jlnqJyp/0Jy0VM2A==}
 
   '@vercel/error-utils@2.0.3':
     resolution: {integrity: sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==}
@@ -826,6 +832,8 @@ snapshots:
       '@types/webidl-conversions': 7.0.3
 
   '@vercel/build-utils@8.6.0': {}
+
+  '@vercel/edge@1.1.2': {}
 
   '@vercel/error-utils@2.0.3': {}
 
