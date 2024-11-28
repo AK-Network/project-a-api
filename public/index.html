@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project A (api)</title>
+
+  <style>
+    :root {
+      color-scheme: dark light;
+    }
+    body {
+      text-align: center;
+      background: rebeccapurple;
+    }
+
+    hgroup {
+      display: inline-grid;
+      font-family: system-ui;
+      place-items: center;
+      background-color: #212121;
+      background-image: radial-gradient(#66339987, 60%, #000000);
+      color: white;
+      inline-size: 100%;
+      max-inline-size: 480px;
+      border-radius: 24px;
+      margin: 0 auto;
+      padding: 5rem 8rem;
+
+      > :where(h1, h2) {
+        margin: 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <hgroup>
     <h1>Project A</h1>
     <h2>Api endpoints</h2>
   </hgroup>
 </body>
+
 </html>
